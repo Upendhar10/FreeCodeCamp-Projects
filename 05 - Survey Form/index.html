@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form id="survey-form">
+      <label id="name-label">
+        Name
+        <input type="text" id="name" required placeholder="Enter your name" />
+      </label>
+      <label id="email-label">
+        Email
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Enter your email"
+        />
+      </label>
+      <label id="number-label">
+        Age (optional)
+        <input
+          type="number"
+          id="number"
+          min="14"
+          max="50"
+          placeholder="Enter your age"
+        />
+      </label>
+      <select id="dropdown">
+        <option>Choose your subject</option>
+        <option>HTML</option>
+        <option>CSS</option>
+      </select>
+      <fieldset>
+        <legend>Choose one option</legend>
+        <label
+          ><input
+            type="radio"
+            checked
+            name="radio-option"
+            value="html"
+          />HTML</label
+        >
+        <label><input type="radio" name="radio-option" value="css" />CSS</label>
+      </fieldset>
+      <fieldset>
+        <legend>Choose multiple option</legend>
+        <label><input type="checkbox" checked value="first" />First</label>
+        <label><input type="checkbox" value="second" />Second</label>
+        <label><input type="checkbox" value="third" />Third</label>
+      </fieldset>
+      <label for="textarea">
+        Any Suggestions ?
+        <textarea id="textarea" placeholder="your message here"></textarea>
+      </label>
+
+      <input type="submit" value="submit" id="submit" />
+    </form>
+  </body>
+</html>
